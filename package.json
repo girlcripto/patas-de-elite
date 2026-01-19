@@ -1,0 +1,38 @@
+{
+  "name": "patas-de-elite",
+  "version": "1.0.0",
+  "description": "Patas de Elite - O Escândalo do Sachê Gourmet com Loja de Rações",
+  "main": "server/server.js",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch",
+    "serve": "http-server",
+    "start": "npm run build && npm run serve",
+    "server": "node server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "init-db": "node server/init-db.js",
+    "dev:full": "concurrently \"npm run server:dev\" \"npm run dev\"",
+    "setup": "npm install && npm run init-db && echo '✅ Configuração concluída'"
+  },
+  "keywords": [
+    "patas",
+    "elite",
+    "satirical",
+    "store",
+    "database"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.1.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}

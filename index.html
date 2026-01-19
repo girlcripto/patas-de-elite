@@ -7,6 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#D4AF37">
+    <!-- Scripts de Banco de Dados e E-commerce -->
+    <script src="src/api-client.js"></script>
+    <script src="src/store.js"></script>
+    <script src="src/ui-components.js"></script>
     <style>
         /* Chosen Palette: Luxury Pet Magazine */
         :root {
@@ -463,13 +468,7 @@
             `).join('');
         }
 
-        // --- INIT ---
-        document.addEventListener('DOMContentLoaded', () => {
-            initFollowerChart();
-            initPollChart();
-            renderComments();
-        });
-
     </script>
+    <script src="src/app.js"></script>
 </body>
 </html>
